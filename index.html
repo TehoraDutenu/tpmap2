@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+    
+    <title>Événements locaux</title>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div class="form-panel">
+      <h3>Nouvel événement</h3>
+      <form method="post" class="form-evento" id="form-evento">
+        <fieldset>
+          <div>
+            <label for="title">Titre de l'événement</label>
+            <input type="text" id="evento-title" required />
+          </div>
+          <div>
+            <label for="description">Description</label><br>
+            <textarea rows="10" cols="35" id="evento-description" required></textarea>
+          </div>
+        </fieldset>
+
+        <h4>Coordonnées géographiques</h4>
+        <fieldset>
+          <div>
+            <label for="latitude">Latitude</label>
+            <input type="text" id="evento-lat" name="evento-lat" required />
+          </div>
+          <div>
+            <label for="longitude">Longitude</label>
+            <input type="text" id="evento-lon" name="evento-lon" required />
+          </div>
+        </fieldset>
+
+        <h4>Agenda</h4>
+        <fieldset>
+            <div>
+              <label for="debut">Début</label>
+              <input type="datetime-local" id="evento-start" required />
+            </div>
+            <div>
+              <label for="fin">Fin</label>
+              <input type="datetime-local" id="evento-end" required />
+            </div>
+        </fieldset>
+
+
+        <button type="submit" class="btn btn-primary">Enregistrer l'événement</button>
+      </form>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+  </body>
+</html>

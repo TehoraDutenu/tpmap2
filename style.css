@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ } 
+
+/* svg {
+    width: 25px;
+    height: 25px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    cursor: pointer;
+  } */
+
+#map {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+fieldset {
+    margin: 20px;
+}
+
+input {
+    height: 30px;
+    margin: 10px;
+    width: 280px;
+}
+
+label {
+    margin: 20px 10px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+textarea {
+    margin-left: 13px;
+}
+
+.form-panel {
+    background-color: #c4bcb8;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 840px;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px; 
+    z-index: 1;
+}
+
+#form-evento {
+    margin: 10px 20px;
+}
+
+h4,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+.btn {
+    height: 30px;
+    width: 360px;
+}
+
+  
+  .mapboxgl-popup {
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .mapboxgl-popup-content {
+    padding: 20px;
+  }
+  
+  .mapboxgl-popup h4 {
+    margin: 0 0 5px;
+  }
+  
+  .mapboxgl-popup p {
+    margin: 0 0 10px;
+  }
+  
+  
