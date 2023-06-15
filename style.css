@@ -89,4 +89,15 @@ h3 {
     margin: 0 0 10px;
   }
   
-  
+  #update-button {
+    position: absolute;
+    top: 115px;
+    left: 10px;
+    z-index: 2;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+  }
